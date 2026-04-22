@@ -37,6 +37,7 @@ Workflow:
 9. Approve and schedule.
 
 Skills:
+- `amazon-content-agent` for a full end-to-end drop (sourcing to tracker in one pass)
 - `amazon-finds-sourcing` for steps 1 to 3
 - `amazon-video-ideation` for step 4
 - `amazon-content-calendar` for steps 5, 8, 9
@@ -45,6 +46,7 @@ Skills:
 Non-negotiables:
 - Always include both UAE and KSA links.
 - Always write for vertical short-form (Reels, TikTok, Shorts).
+- Every Amazon video uses one hook from the approved list in `production-tracker`.
 - Never schedule before client approval.
 
 ### Core42
@@ -71,8 +73,8 @@ Non-negotiables:
 
 Every piece of content moves through these stages. Use `production-tracker` to track them.
 
-Amazon stages:
-Idea, Shortlisted, Scripted, Shoot planned, Raw footage uploaded, Edited, Sent for approval, Approved, Scheduled, Posted.
+Amazon stages (10):
+Idea, Selected, Ordered, Scripted, Ready to shoot, Shot, Edited, Client review, Approved, Scheduled.
 
 Core42 stages:
 Idea, Drafted, Sent for approval, Approved, Scheduled, Posted.
@@ -91,11 +93,11 @@ Claude acts as the account manager. For each task, Claude should:
 - Write in the client voice.
 - Flag blockers early.
 
-Human owners (filled in per project):
-- Client lead: _TBC_
-- Producer or shoot lead (Amazon): _TBC_
-- Editor: _TBC_
-- Approver (client side): _TBC_
+Team roles (lean, creator-led):
+- Social Manager: owns tracker, calendar, client comms, scheduling.
+- Content Creator: owns sourcing, scripting, and shooting (Amazon).
+- Editor: owns post-production and final cut.
+- Client approver (client side): _TBC_
 
 ## 5. Quality bar
 
@@ -124,6 +126,7 @@ Monthly:
 
 ## 7. Skills index
 
+- `.claude/skills/amazon-content-agent/SKILL.md`
 - `.claude/skills/amazon-finds-sourcing/SKILL.md`
 - `.claude/skills/amazon-video-ideation/SKILL.md`
 - `.claude/skills/amazon-content-calendar/SKILL.md`
