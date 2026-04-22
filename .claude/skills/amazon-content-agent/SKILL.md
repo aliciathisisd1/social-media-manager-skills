@@ -90,13 +90,46 @@ Output a clean table with these columns:
 
 Set Status to "Ready to shoot" for every row.
 
-## Step 7: Final output structure
+## Step 7: Captions (Instagram + TikTok)
+
+For every selected item, write two captions. One for Instagram, one for TikTok.
+
+**Instagram caption rules:**
+- Slightly more descriptive than TikTok.
+- Max 2 lines.
+- Clean, premium tone.
+- Light CTA allowed (e.g. "UAE + KSA link below").
+
+**TikTok caption rules:**
+- Casual and reactive.
+- Feels like a comment, not a brand line.
+- Curiosity-driven.
+- No formal CTA.
+
+**Global caption rules:**
+- Do not explain the product.
+- Do not repeat the script.
+- Reinforce the hook or the payoff.
+- Keep it short and natural.
+
+**Output format per item:**
+
+```
+Instagram:
+[caption]
+
+TikTok:
+[caption]
+```
+
+## Step 8: Final output structure
 
 Return the response in this order:
 
 1. **Selected ideas summary** (5 items, one line each, with the reason for selection)
 2. **Shoot Packs** (one full Shoot Pack per selected item)
 3. **Production tracker table** (all 5 rows)
+4. **Captions** (Instagram + TikTok, one block per item)
 
 ## Global rules
 
