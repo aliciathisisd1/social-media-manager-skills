@@ -1,57 +1,54 @@
 ---
 name: amazon-internal-reviewer
-description: Internal QA gate for Amazon content. Checks quality, compliance, and brand fit before content goes to the client. Must pass before the client sheet exporter can run.
+description: Review content before it goes to the client-facing sheet. Sixth step in the Amazon content workflow. Must pass before amazon-client-sheet-exporter can run.
 ---
 
 # Amazon Internal Reviewer
 
-Purpose: internal QA gate. Sixth step. Last check before content goes to the client.
+Purpose: review content before it goes to the client-facing sheet. Sixth step. Last gate before the client sees anything.
 
 ## Input
 
 A list of items, each including:
 - Edited cut (filename or link)
-- Caption (Instagram + TikTok)
-- Production brief
+- Instagram + TikTok captions
+- Original production plan
+
+## What to check
+
+For each item, assess all of the following:
+
+- **Product clarity** — is the product obvious within 2 seconds?
+- **Strong hook** — does the opening grab attention immediately?
+- **Clear benefit** — is the benefit visible without explanation?
+- **Pacing** — is the edit tight? No dead frames, no slow starts.
+- **Brand safety** — no health claims, no alcohol, no children-targeted content, no unverified comparisons.
+- **Cultural appropriateness** — suitable for UAE and KSA audiences.
+- **Compliance** — no external URLs in captions, no medical or weight loss claims, no negative reviews.
+- **"I need this" reaction** — would a viewer stop scrolling and want this product?
 
 ## Output
 
-One review row per item:
+One review per item:
 
-| ID | Quality | Compliance | Brand fit | Status | Notes |
-
-- Status is exactly `Pass`, `Fix`, or `Reject`.
-- Notes are one line. Specific. Actionable.
-
-## Quality checks
-
-- Hook visible in first 2 seconds.
-- Product clearly visible and used.
-- Pacing tight. No dead frames.
-- Length within bounds (15–40 sec).
-- Audio clean. On-screen text readable.
-
-## Compliance checks
-
-- No medical, weight loss, or health claims.
-- No alcohol. No children-targeted content.
-- No external URLs in caption.
-- No unverified comparisons or negative reviews.
-- Both UAE and KSA mentioned in the closing frame.
-
-## Brand fit checks
-
-- Product-first. Not lifestyle fluff.
-- Tone is personal, relatable, honest.
-- No sales language. No forced messaging.
-- Culturally appropriate for UAE and KSA.
+**Internal Content ID:**
+**Status:** Approved / Needs changes / Reject
+**Reason:** (1 to 2 lines — what passed or what failed)
+**Exact fixes needed:** (bullet list — specific and actionable; leave blank if Approved)
 
 ## Status rules
 
-- `Pass` only if all three columns are clean.
-- `Fix` if a single small issue is addressable. Notes must say what to fix.
-- `Reject` if multiple issues or a hard compliance fail.
+- **Approved** — all checks pass. Ready for `amazon-client-sheet-exporter`.
+- **Needs changes** — one or two small, fixable issues. List exactly what to change.
+- **Reject** — hard compliance fail, multiple issues, or content that is weak, generic, or ad-like.
+
+## Be strict
+
+- Reject weak or generic content.
+- Reject ad-like content.
+- Reject over-complicated concepts.
+- If it would not make a viewer stop scrolling, it does not pass.
 
 ## Hand-off
 
-Items with `Pass` status are eligible for `amazon-client-sheet-exporter`. Nothing else moves forward.
+Approved items only move to `amazon-client-sheet-exporter`. Nothing else proceeds.
