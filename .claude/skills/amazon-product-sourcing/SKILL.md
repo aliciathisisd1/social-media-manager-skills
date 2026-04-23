@@ -17,6 +17,36 @@ Purpose: find strong Amazon products for short-form content before any ideation 
 - Must work for UAE or KSA (or both).
 - No weak, generic, boring, or explanation-heavy products.
 
+## Historical avoidance rule (CRITICAL)
+
+Before suggesting any product:
+
+1. Check it against `./historical-products.md`.
+2. If the candidate is the same or similar to anything in that list, reject it.
+3. Do not repeat product categories, functions, or concepts too closely.
+
+### Similarity definition
+
+A product is "too similar" if ANY of these are true:
+- It solves the same problem in the same way.
+- It looks visually similar on camera.
+- The resulting video would be almost identical to a past one.
+
+Category overlap alone is not enough to reject — visual + functional overlap is.
+
+### Novelty rule
+
+All suggested products must feel:
+- new,
+- different from past content,
+- not repetitive in category or function.
+
+### Final check (mandatory before each output)
+
+Ask: **"Have we already done something like this?"**
+
+If yes → reject and replace.
+
 ## Output
 
 One entry per product:
