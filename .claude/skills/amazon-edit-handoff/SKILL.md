@@ -1,44 +1,47 @@
 ---
 name: amazon-edit-handoff
-description: Create a clear edit brief from shot footage and the production plan. Fourth step in the Amazon content workflow. Use after shooting is done.
+description: Prepare a clean handoff for the editor once footage is shot. Fourth step in the Amazon content workflow. Use after shooting is done.
 ---
 
 # Amazon Edit Handoff
 
-Purpose: hand shot footage to the editor with a clear edit brief. Fourth step. Cannot run without shot footage.
+Purpose: prepare a clean handoff for the editor once footage is shot. Fourth step. Cannot run without shot footage.
 
 ## Input
 
-- The original Production Brief.
+- The original Production Plan.
 - A list of shot files or clip names.
-- Notes from the shoot day (if any).
+- Shoot day notes (if any).
 
 ## Output
 
 One Edit Brief per item:
 
-**1. Item ID + product**
-**2. Opening frame** — exact clip + timestamp + on-screen text.
-**3. Cut sequence** — ordered list of clips with rough cut points.
-**4. On-screen text** — what appears, when, for how long.
-**5. Pacing** — tight or medium, target length in seconds.
-**6. Music vibe** — one line. No specific track unless provided.
-**7. Closing frame** — exact clip + UAE + KSA visible.
-**8. Notes** — anything to flag (re-shoots needed, framing fixes).
+**Internal Content ID:** (e.g. AE-001, SA-003)
+**Title:** (product name + hook in plain language)
+**Hook:** (exact wording)
+**Concept:** (1 sentence — what this video does)
+**Editor goal:** (1 sentence — what a great edit looks like)
+**Key visual moments to preserve:** (2 to 4 bullets — the shots that must make the final cut)
+**Text overlay guidance:** (what text appears, when, and for how long)
+**Pacing guidance:** (tight or medium, target length in seconds)
+**Do not over-edit:** (1 to 2 lines — specific things to leave alone)
+**Final payoff moment:** (the closing beat — must land cleanly, must mention UAE + KSA)
 
 ## Rules
 
-- Total length: 15 to 30 seconds for Finds, 20 to 40 seconds for Now.
-- Cuts must move the story forward. No filler.
+- Keep it short and practical. One brief per item fits on one screen.
+- Prioritize clarity. The editor should have zero questions after reading.
+- Do not rewrite the concept. Support it.
+- Make it easy to execute. No abstract direction.
 - Hook text must appear in the first 2 seconds.
-- No watermarks. No third-party logos.
-- Closing frame must show price and UAE + KSA mention.
+- Total length: 15 to 30 seconds for Finds, 20 to 40 seconds for Now.
 
 ## Do not include
 
 - Captions (handled by `amazon-caption-writer`)
-- Client comments
-- Approval notes
+- Internal review notes
+- Client-facing language
 
 ## Hand-off
 
