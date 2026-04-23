@@ -1,38 +1,37 @@
 ---
 name: amazon-product-sourcing
-description: Source Amazon products for UAE and KSA that pass the product-first filter. First step in the Amazon content workflow. Use when starting a new content batch.
+description: Find strong Amazon products for short-form content before any ideation begins. First step in the Amazon content workflow. Use when starting a new content batch.
 ---
 
 # Amazon Product Sourcing
 
-Purpose: source Amazon products. First step. Nothing in the workflow runs before this.
+Purpose: find strong Amazon products for short-form content before any ideation begins. First step. Nothing else runs before this.
+
+## Rules
+
+- Product-first only.
+- Must solve a real problem OR create immediate joy or satisfaction.
+- Must feel like "omg I need this".
+- Must be visually clear in 1 to 2 seconds.
+- Must be shootable by 1 creator with a phone.
+- Must work for UAE or KSA (or both).
+- No weak, generic, boring, or explanation-heavy products.
 
 ## Output
 
-Two tables, one per market.
+One entry per product:
 
-| ID | Category | Product | Problem solved or joy created | Visual potential | Amazon UAE | Amazon KSA |
-
-UAE IDs: `AE-001` onward. KSA IDs: `SA-001` onward.
-
-## Sourcing rules
-
-- Every product must either solve a real problem OR create immediate satisfaction or joy.
-- Must be available on both Amazon UAE and Amazon KSA. Both links required.
-- Categories are exactly `Finds` or `Now`.
-- Products must be visually obvious — the benefit must show on camera in under 3 seconds.
-- No generic items. No products that need explanation.
-- No medical, weight loss, alcohol, or children's products.
-- Brand-safe at all times.
-
-## Visual potential column
-
-One line. Describe what the camera will SEE that proves the product works. If you can't describe it visually, reject the product.
+**Product name:**
+**What it does:** (1 line)
+**Problem it solves:** (1 line)
+**Why it will perform:** (1 line — visual hook, satisfaction, or surprise)
+**Shot type:** (Desk / Kitchen / Bathroom / POV / Close-up / Entrance / Outdoor)
+**Category:** (Amazon Finds or Amazon Now)
 
 ## Amazon Now rules
 
 - Grocery or everyday essentials only.
-- Items that solve "ran out", "forgot", or "need now" moments.
+- Must solve a "ran out", "forgot", or "need it now" moment.
 
 ## Do not include
 
