@@ -1,11 +1,11 @@
 ---
 name: amazon-monthly-planner
-description: Generate structured monthly content ideas for UAE and KSA. Product-first, visually obvious, "i need this" ideas only. Use when the user wants a monthly content outline.
+description: Generate structured monthly content ideas for UAE and KSA. Product-first, visually obvious, "i need this" ideas only, aligned to season, culture, and top-performing categories. Use when the user wants a monthly content outline.
 ---
 
 # Amazon Monthly Planner
 
-Purpose: generate structured monthly content ideas only. Every idea must be product-first and pass the performance filter. Nothing else.
+Purpose: generate structured monthly content ideas only. Every idea must be product-first, pass the performance filter, and fit the time of year and market. Nothing else.
 
 ## Core principle
 
@@ -16,6 +16,57 @@ The product must either:
 - create immediate satisfaction or joy.
 
 The viewer must instantly think: **"i need this"**.
+
+## Seasonal + cultural planning (CRITICAL)
+
+Content must reflect the time of year, cultural moments, and local relevance.
+
+When planning, always consider:
+- Month
+- Cultural events
+- Weather conditions
+- Travel patterns
+- Social behaviour in UAE and KSA
+
+### Key moments to incorporate
+
+- **Ramadan** — cooking, hosting, convenience. Time-saving kitchen tools. Amazon Now grocery moments.
+- **Eid Al Adha** — travel, packing, organisation. Quick prep, gifting.
+- **UAE National Day** — travel, outdoor, road trips. Convenience products.
+- **Saudi National Day** — celebration items. Home setups, decor.
+- **World Cup / major sports** — snacks (Amazon Now). Football-related items. Social viewing setups.
+
+### Weather insight
+
+- **Summer (extreme heat)** — cooling solutions, indoor comfort, convenience products. Avoid outdoor-heavy content.
+- **Winter (Nov–Feb)** — camping, outdoor setups, travel gear.
+
+### Market performance priority
+
+When selecting products, prioritise high-performing categories per market.
+
+**UAE (in order):**
+1. Grocery (Amazon Now)
+2. Kitchen & Dining
+3. Appliances
+4. Sports
+5. Electronics
+6. Beauty & Personal Care
+
+**KSA (in order):**
+1. Home & Garden
+2. Toys & Games
+3. Home-related products
+4. Electronics
+5. Appliances
+6. Kitchen & Dining
+
+### Distribution rule
+
+Across the planned batch:
+- Majority of products must come from the top-performing categories above.
+- Still include some variety for freshness.
+- Do not over-index on low-performing categories.
 
 ## Video structure (mandatory)
 
@@ -85,7 +136,7 @@ Avoid: sales language, forced messaging, over-explaining.
 
 Two tables, one per market. Default 10 UAE ideas, 10 KSA ideas (adjust to requested volume).
 
-| ID | Category | Hook | Product | Problem it solves | Concept (1 line) | Shot Type |
+| ID | Market | Category | Hook | Product | Problem it solves | Concept (1 line) | Shot Type | Why this fits the current moment (1 line) |
 
 UAE IDs: `AE-001` onward. KSA IDs: `SA-001` onward.
 
@@ -98,6 +149,7 @@ UAE IDs: `AE-001` onward. KSA IDs: `SA-001` onward.
 - Product column names a specific product type, not a generic category.
 - Problem column is one line. Must describe the real-world moment the product solves.
 - Concept column is one line. Must describe a visual action, not a general description.
+- "Why this fits the current moment" column must reference season, cultural event, weather, or market priority. One line. Not filler.
 - Mix shot types: Desk, Kitchen, Bathroom, Outdoor, POV, Close-up, Entrance.
 
 ## Amazon Now rules
@@ -111,8 +163,9 @@ UAE IDs: `AE-001` onward. KSA IDs: `SA-001` onward.
 
 If an idea:
 - feels generic,
-- is not visually clear, OR
-- does not create an "i need this" reaction
+- is not visually clear,
+- does not create an "i need this" reaction, OR
+- does not fit the current season, cultural moment, or top-performing category
 
 DO NOT include it. Replace it.
 
@@ -125,4 +178,10 @@ DO NOT include it. Replace it.
 
 ## Goal
 
-Every idea should feel like: **"why have i never seen this before."**
+Every idea should feel:
+- locally relevant,
+- culturally aware,
+- seasonally appropriate,
+- product-first and scroll-stopping.
+
+The viewer should think: **"why have i never seen this before."**
