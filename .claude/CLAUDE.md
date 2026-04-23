@@ -127,6 +127,9 @@ Monthly:
 ## 7. Skills index
 
 - `.claude/skills/amazon-content-agent/SKILL.md`
+- `.claude/skills/amazon-monthly-planner/SKILL.md`
+- `.claude/skills/amazon-shoot-pack-generator/SKILL.md`
+- `.claude/skills/amazon-caption-writer/SKILL.md`
 - `.claude/skills/amazon-finds-sourcing/SKILL.md`
 - `.claude/skills/amazon-video-ideation/SKILL.md`
 - `.claude/skills/amazon-content-calendar/SKILL.md`
