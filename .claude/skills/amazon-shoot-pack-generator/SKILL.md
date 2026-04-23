@@ -1,45 +1,47 @@
 ---
 name: amazon-shoot-pack-generator
-description: Generate a single Shoot Pack for an Amazon content item so a solo creator can shoot without questions. Use when a planned row needs the full shoot brief.
+description: Turn selected content ideas into shoot-ready Shoot Packs for a solo creator. Use when the user has a list of planned ideas and needs the full shoot brief for each.
 ---
 
 # Amazon Shoot Pack Generator
 
-Lightweight generator. Input is one content item. Output is one Shoot Pack.
+Purpose: turn selected ideas into shoot-ready content. One Shoot Pack per idea. No extras.
 
-## Inputs
+## Input
 
+A list of selected content ideas. Each idea should include:
 - Title or product
-- Market (UAE / KSA / UAE + KSA)
-- Category (Finds or Now)
 - Hook (from the approved list in `.claude/skills/production-tracker/SKILL.md`)
 - Concept (1 line)
+- Category (Finds or Now)
 - Shot Type
 
-## Output (6 sections, mandatory)
+## Output
 
-1. **Hook** — exact wording from the approved list.
-2. **Concept (1 line)** — one plain sentence.
-3. **Shot list** — 3 to 5 numbered shots, one line each.
-4. **Filming notes** — 2 to 4 bullets on lighting, angle, setting.
-5. **Creator instruction** — delivery, pacing, performance.
-6. **Ending / payoff** — final beat. Ties back to the hook. Mentions UAE and KSA.
+One Shoot Pack per idea, with these 6 sections:
 
-## Performance rules (apply every time)
+**1. Hook** — exact wording from the approved list.
+**2. Concept** — one plain sentence.
+**3. Shot list** — 3 to 5 numbered shots, one line each.
+**4. Filming notes** — 2 to 4 bullets on lighting, angle, and setting.
+**5. Creator instruction** — how to perform it: delivery, pacing, where to be silent, where to react.
+**6. Ending / payoff** — the final beat. Must feel satisfying or surprising. Must mention UAE and KSA.
 
-1. First shot creates confusion or tension.
-2. Never open on a static product shot.
-3. Include at least one interaction moment.
-4. Include a pattern interrupt.
-5. Ending must feel satisfying or surprising.
-6. Do not over-explain.
+## Rules
 
-## For Amazon Now items
+- Must be shootable by 1 creator with a phone.
+- Keep it simple. No crew, no studio required.
+- Focus on visual storytelling. If the shot shows it, do not say it.
+- First shot must create curiosity or tension. No static product opens.
+- Include at least one interaction moment per pack (touch, press, poke, pour, reveal).
+- Filming notes must be doable with natural light and basic framing.
 
-- Prioritise POV and real-life framing.
-- No polished studio shots.
-- Show a clock, an empty shelf, or a "15 minutes later" beat.
+## For Amazon Now ideas
 
-## Keep it tight
+- Use POV framing. Keep it real and in-the-moment.
+- No polished setups. Messy kitchen counter is fine.
+- Show the problem first, then the 15-minute solution.
 
-One Shoot Pack per output. One screen. No preamble, no summary.
+## Format
+
+Return all Shoot Packs in sequence. Label each clearly by ID or title. No preamble, no summary after.
