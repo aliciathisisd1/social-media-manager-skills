@@ -1,41 +1,46 @@
 ---
 name: amazon-client-sheet-exporter
-description: Export internally approved Amazon content into a clean client-facing sheet. Final step in the Amazon content workflow. Only works on items that passed internal review.
+description: Convert internally approved content into a clean client-facing sheet. Final step in the Amazon content workflow. Only runs on content with Approved status from amazon-internal-reviewer.
 ---
 
 # Amazon Client Sheet Exporter
 
-Purpose: export approved content into a clean client-facing sheet. Seventh and final step.
-
-## Input
-
-- A list of items that passed `amazon-internal-reviewer` with status `Pass`.
-- For each item: ID, category, product, hook, edited cut link, captions, Amazon UAE link, Amazon KSA link.
+Purpose: convert internally approved content into a clean client-facing sheet format. Seventh and final step.
 
 ## Pre-check (mandatory)
 
-- If any item is not `Pass`, do not include it. Flag at the top of the output: "Skipped: <IDs> (not internally approved)".
-- If no items are `Pass`, return: "No items approved for export." Do nothing else.
+- Only process items with `Approved` status from `amazon-internal-reviewer`.
+- If any item is not `Approved`, skip it and note at the top: "Skipped: <IDs> — not internally approved."
+- If no items are `Approved`, return: "No items approved for export." Do nothing else.
 
 ## Output
 
-One clean client-facing table:
+One row per approved item:
 
-| # | Category | Product | Hook | Concept | Edited Cut | Instagram Caption | TikTok Caption | Amazon UAE | Amazon KSA | Suggested Post Date |
+| Internal Content ID | Content Title | Market | Platform | Category | Final Caption | Final Product Link | Approval Status | Video Link | Notes |
+
+## Field definitions
+
+- **Internal Content ID** — e.g. AE-001, SA-003.
+- **Content Title** — product name + hook in plain language.
+- **Market** — UAE, KSA, or Both.
+- **Platform** — Instagram, TikTok, or Both.
+- **Category** — Amazon Finds or Amazon Now.
+- **Final Caption** — platform-specific caption as written. One row per platform if captions differ.
+- **Final Product Link** — Amazon UAE link and Amazon KSA link, both required.
+- **Approval Status** — Approved.
+- **Video Link** — leave as placeholder if not yet uploaded.
+- **Notes** — leave blank unless there is a specific scheduling instruction or client note.
 
 ## Rules
 
-- Numbering starts at 1 and runs through the batch.
-- No internal IDs in the client sheet.
-- No internal notes, status columns, or QA flags.
-- No work-in-progress items.
-- Suggested Post Date is left blank if not provided.
-- Captions go in full, exactly as written.
-- Both Amazon UAE and Amazon KSA links required for every row.
-
-## Tone
-
-This is the client's view. Keep it polished, scannable, professional. No internal jargon.
+- Client-facing output only. Clean and polished.
+- No internal comments.
+- No working notes.
+- No draft language.
+- No production jargon unless it is client-facing (e.g. "Amazon Now" is fine).
+- Both UAE and KSA product links required on every row.
+- Approval Status column shows `Approved` only — no other statuses reach this step.
 
 ## Do not include
 
