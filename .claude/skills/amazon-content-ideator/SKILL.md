@@ -1,52 +1,56 @@
 ---
 name: amazon-content-ideator
-description: Turn sourced Amazon products into product-first content ideas. Second step in the Amazon content workflow. Requires sourced products as input.
+description: Turn approved sourced products into strong content ideas. Second step in the Amazon content workflow. Requires sourced products as input.
 ---
 
 # Amazon Content Ideator
 
-Purpose: turn sourced products into content ideas. Second step. Cannot run without sourced products.
+Purpose: turn approved sourced products into strong content ideas. Second step. Cannot run without sourced products.
 
 ## Input
 
-A list of sourced products from `amazon-product-sourcing`. Each must include product name, category, and visual potential.
-
-## Core principle
-
-Every idea must be PRODUCT-FIRST.
-
-The viewer must instantly think: **"i need this"**.
-
-## Mandatory video structure
-
-Every idea must map to:
-1. Hook (0–2 sec) — grab attention.
-2. Reveal (2–3 sec) — product visible immediately.
-3. Context (2–5 sec) — show the problem.
-4. Product in action (5–15 sec).
-5. Result — clear visible outcome.
-
-## Output
-
-| ID | Category | Hook | Product | Problem | Concept (1 line) | Shot Type |
-
-ID matches the sourced product ID (AE-001 → idea AE-001).
+A list of approved products from `amazon-product-sourcing`.
 
 ## Rules
 
-- Hooks must come from the approved list in `production-tracker/SKILL.md`. Use exact wording.
-- No hook repeated within the same market.
-- Concept describes a visual action, not a description.
-- Mix shot types: Desk, Kitchen, Bathroom, POV, Close-up, Entrance, Outdoor.
-- Include 4 to 6 Amazon Now per market when volume allows.
+- Must use approved hooks only (from `production-tracker/SKILL.md`).
+- Product must appear in the first 2 seconds.
+- Must feel product-centric.
+- Must show problem to solution clearly.
+- No talking heads.
+- Hands and product interaction preferred.
+- Must feel personal, relatable, and honest.
+- Avoid ad-like language.
+- Avoid forced messaging.
+- Avoid over-explaining.
 
-## Performance filter
+## Mandatory video structure
 
-Reject any idea that:
-- is not visually clear,
-- does not show transformation,
+Every idea must map to this exact structure:
+
+1. **Hook (0–2 sec)** — grab attention immediately.
+2. **Unboxing or product reveal (2–3 sec)** — product visible right away.
+3. **Context / problem (2–5 sec)** — show the situation.
+4. **Product in action (5–15 sec)** — show usage.
+5. **Result / outcome** — clear visible payoff.
+
+## Output
+
+One entry per idea:
+
+**Hook:** (exact wording from approved list)
+**Product:** (specific item name)
+**Problem it solves:** (1 line)
+**Concept:** (1 line — a visual action, not a description)
+**Shot type:** (Desk / Kitchen / Bathroom / POV / Close-up / Entrance / Outdoor)
+**Category:** (Amazon Finds or Amazon Now)
+
+## Rejection rule
+
+Do not include any idea that:
 - cannot be understood in under 3 seconds,
-- does not trigger "i need this".
+- does not show clear transformation,
+- feels generic or ad-like.
 
 ## Do not include
 
