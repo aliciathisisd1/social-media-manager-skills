@@ -1,20 +1,19 @@
 ---
 name: amazon-caption-writer
-description: Write Instagram and TikTok captions for an Amazon content item, tuned to the item's hook and payoff. Use after a Shoot Pack exists and before scheduling.
+description: Generate platform-native Instagram and TikTok captions from a content idea or shoot pack. Use after ideas are selected or shoot packs are created, before scheduling.
 ---
 
 # Amazon Caption Writer
 
-Lightweight caption generator. Input is one content item. Output is two captions.
+Purpose: generate platform-native captions. Two captions per item, nothing else.
 
-## Inputs
+## Input
 
-- Title or product
+A content idea or Shoot Pack. At minimum:
 - Hook (exact wording)
 - Concept or payoff (1 line)
-- Market (UAE / KSA / UAE + KSA)
 
-## Output format
+## Output
 
 ```
 Instagram:
@@ -26,25 +25,18 @@ TikTok:
 
 ## Instagram rules
 
-- Slightly more descriptive than TikTok.
 - Max 2 lines.
-- Clean, premium tone.
+- Slightly more polished.
 - Light CTA allowed (e.g. "UAE + KSA link below").
 
 ## TikTok rules
 
-- Casual and reactive.
+- Casual.
 - Feels like a comment, not a brand line.
-- Curiosity-driven.
-- No formal CTA.
+- No CTA.
 
 ## Global rules
 
 - Do not explain the product.
-- Do not repeat the script.
 - Reinforce the hook or payoff.
 - Keep it short and natural.
-
-## Keep it tight
-
-Two captions per item. Nothing else.
