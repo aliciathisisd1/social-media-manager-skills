@@ -17,14 +17,23 @@ The product must either:
 
 The viewer must instantly think: **"i need this"**.
 
+## Video structure (mandatory)
+
+Every idea must follow this exact structure:
+
+1. **Hook (0–2 sec)** — grab attention.
+2. **Unboxing / product reveal (2–3 sec)** — product visible immediately.
+3. **Context (2–5 sec)** — show the situation or problem.
+4. **Product in action (5–15 sec)** — show usage.
+5. **Result** — clear, visible outcome.
+
 ## Content style rules
 
-All ideas must follow this format:
-1. Start with unboxing OR immediate product reveal.
-2. Show the product solving something.
-3. Use real environments (desk, kitchen, bathroom, entrance, car).
-4. Keep pacing fast and visual.
-5. Make the benefit obvious WITHOUT explanation.
+- Start with unboxing OR immediate product reveal.
+- Show the product solving something.
+- Film in real environments (desk, kitchen, bathroom, entrance, car).
+- Keep pacing fast and visual.
+- Make the benefit obvious WITHOUT explanation.
 
 ## Creative rules
 
@@ -44,11 +53,32 @@ Only include ideas that:
 - create curiosity or surprise,
 - can be understood in under 3 seconds.
 
+## Do not include
+
+- Ad-like or scripted content.
+- Showing product without using it.
+- Slow starts.
+- Overcomplicated ideas.
+- Over-editing or over-production.
+- Web links, URLs, or external CTAs.
+- Products not sold on Amazon.
+- Negative or comparative reviews.
+- Content aimed at children.
+- Health or medical claims.
+- Weight loss claims.
+- Medical advice.
+- Alcohol-related products (any form).
+
+## Tone and style
+
+Aim for: personal, relatable, honest.
+
+Avoid: sales language, forced messaging, over-explaining.
+
 ## Market rules
 
 - Environments must be culturally appropriate for UAE and KSA.
 - Clean backgrounds.
-- No inappropriate settings.
 - Brand-safe at all times.
 
 ## Output
@@ -59,15 +89,15 @@ Two tables, one per market. Default 10 UAE ideas, 10 KSA ideas (adjust to reques
 
 UAE IDs: `AE-001` onward. KSA IDs: `SA-001` onward.
 
-## Rules for the table
+## Table rules
 
 - Categories are exactly `Finds` or `Now`.
 - Include 4 to 6 Amazon Now per market (scale to volume; for 5-idea batches, include 2 Now).
 - Hooks must come from the approved list in `.claude/skills/production-tracker/SKILL.md`. Use exact wording.
 - Use varied hooks. No hook repeated within the same market.
-- Product column names a specific product type, not a generic category ("magnetic levitating plant pot", not "desk accessory").
+- Product column names a specific product type, not a generic category.
 - Problem column is one line. Must describe the real-world moment the product solves.
-- Concept column is one line. Must be a visual action, not a description.
+- Concept column is one line. Must describe a visual action, not a general description.
 - Mix shot types: Desk, Kitchen, Bathroom, Outdoor, POV, Close-up, Entrance.
 
 ## Amazon Now rules
@@ -79,14 +109,14 @@ UAE IDs: `AE-001` onward. KSA IDs: `SA-001` onward.
 
 ## Rejection rule
 
-If an idea is:
-- boring,
-- not visually clear, OR
-- not instantly useful
+If an idea:
+- feels generic,
+- is not visually clear, OR
+- does not create an "i need this" reaction
 
 DO NOT include it. Replace it.
 
-## Do not include
+## Do not include in output
 
 - Shoot Packs
 - Captions
