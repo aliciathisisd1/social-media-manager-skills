@@ -1,15 +1,15 @@
 ---
 name: amazon-caption-writer
-description: Generate platform-native Instagram and TikTok captions from a content idea or shoot pack. Use after ideas are selected or shoot packs are created, before scheduling.
+description: Write short platform-native captions after content is edited. Fifth step in the Amazon content workflow. Use after the edit handoff is complete.
 ---
 
 # Amazon Caption Writer
 
-Purpose: generate platform-native captions. Two captions per item, nothing else.
+Purpose: write short platform-native captions after the content is edited. Fifth step. Cannot run without an edited piece.
 
 ## Input
 
-A content idea or Shoot Pack. At minimum:
+An edited content item. At minimum:
 - Hook (exact wording)
 - Concept or payoff (1 line)
 
@@ -28,15 +28,22 @@ TikTok:
 - Max 2 lines.
 - Slightly more polished.
 - Light CTA allowed (e.g. "UAE + KSA link below").
+- Clean and premium.
 
 ## TikTok rules
 
 - Casual.
-- Feels like a comment, not a brand line.
+- Reactive. Feels like a comment, not a brand line.
 - No CTA.
 
 ## Global rules
 
 - Do not explain the product.
 - Reinforce the hook or payoff.
-- Keep it short and natural.
+- Keep it short.
+- No sales language.
+- No forced messaging.
+
+## Hand-off
+
+Captions feed `amazon-internal-reviewer` alongside the edited cut.
