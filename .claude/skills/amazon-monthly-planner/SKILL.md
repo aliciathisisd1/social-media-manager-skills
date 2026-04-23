@@ -1,40 +1,42 @@
 ---
 name: amazon-monthly-planner
-description: Plan a month of Amazon content by volume and market, returning hook, concept, shot type, and category per item. Use when the user wants a bulk content outline across UAE and KSA.
+description: Generate structured monthly content ideas for UAE and KSA. 10 ideas per market, covering Amazon Finds and Amazon Now. Use when the user wants a monthly content outline.
 ---
 
 # Amazon Monthly Planner
 
-Lightweight planning skill. Turn a volume target into a clean content table. No Shoot Packs, no captions, no tracker rows.
-
-## Inputs
-
-- Total videos per market (e.g. 10 UAE, 10 KSA).
-- Amazon Now quota per market (default 4 to 6).
+Purpose: generate structured monthly content ideas only. Nothing else.
 
 ## Output
 
-One table, these columns only:
+Two tables, one per market. 10 UAE ideas, 10 KSA ideas.
 
-| ID | Market | Category | Hook | Concept (1 line) | Shot Type |
+Each row includes only:
+
+| ID | Category | Hook | Concept (1 line) | Shot Type |
+
+UAE table uses IDs: `AE-001` to `AE-010`
+KSA table uses IDs: `SA-001` to `SA-010`
 
 ## Rules
 
-- IDs use market prefix: `AE-001` for UAE, `SA-001` for KSA.
 - Categories are exactly `Finds` or `Now`.
+- Include 4 to 6 Amazon Now per market. The rest are Amazon Finds.
 - Hooks must come from the approved list in `.claude/skills/production-tracker/SKILL.md`. Use exact wording.
-- Each hook appears at most once per market for variety. Only repeat when volume per market exceeds 10.
-- UAE content feels locally relevant: heat, apartments, Marina, Dubai commute, rooftop life.
-- KSA content feels locally relevant: family gatherings, majlis, gahwa, dates, home setups.
-- Mix shot types across the batch: Desk, Kitchen, Bathroom, Outdoor, POV, Close-up.
+- Use varied hooks. No hook repeated within the same market.
+- UAE concepts feel locally relevant: heat, apartments, Marina, Dubai commute, rooftop life.
+- KSA concepts feel locally relevant: family gatherings, majlis, gahwa, dates, home setups.
+- Mix shot types: Desk, Kitchen, Bathroom, Outdoor, POV, Close-up.
 
 ## Amazon Now rules
 
 - Focus on grocery or everyday essentials.
-- Show real urgency (problem, then 15-minute solution).
-- Feel in-the-moment. POV-friendly, not studio.
-- Good triggers: ran out mid-recipe, last-minute guests, late-night cravings, forgot an essential.
+- Show urgency: problem, then 15-minute solution.
+- Feel in-the-moment. Good triggers: ran out mid-recipe, last-minute guests, late-night cravings, forgot an essential.
 
-## Keep it tight
+## Do not include
 
-One table, no commentary, no long explanations.
+- Shoot Packs
+- Captions
+- Production tracker rows
+- Long explanations or commentary
